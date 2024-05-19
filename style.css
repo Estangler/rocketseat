@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Mulish';
+
+    --text-color:#312D64;
+    --text-title:#B52184;
+    --bg-color:#F9F4FB;
+    --bg-gradient: linear-gradient(100deg, rgba(52,49,147,1) 0%, rgba(15,11,66,1) 100%);
+}
+#app {
+    background-color: var(--bg-color);
+}
+
+.header-wrapper {
+    padding-top: 31.2rem;
+    padding-left: 10.9rem;
+}
+
+header {
+    display: flex;
+    gap: 2.8rem;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 5.8rem;
+    color: var(--text-title);
+    font-weight: 900;
+}
+
+header p {
+    font-size: 3.2rem;
+    color: var(--text-color);
+    font-weight: 600;
+    margin-bottom: 17.9rem;
+}
+
+section {
+    background-image: var(--bg-gradient);
+    display: flex;
+    padding: 6.4rem 11.1rem;
+    gap: 6rem;
+    margin: 10.3rem 0 9.5rem;
+}
+
+.planets {
+    background-color: var(--bg-color);
+    border-radius: 2.4rem;
+    padding: 3.2rem;
+    width: 36.8rem;
+}
+
+.planets h2 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--text-title);
+    padding: 4rem 0 2.4rem;
+}
+
+.planets p {
+    font-size: 1.9rem;
+    color: var(--text-color);
+}
+
+form {
+    display: flex;
+    gap: 9.2rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    padding-left: 10.9rem;
+}
+
+form legend {
+    font-size: 4.2rem;
+    color: var(--text-title);
+    font-weight: 900;
+    margin-bottom: 3rem;
+}
+
+form input {
+
+    width: 59.2rem;
+    height: 4.8rem;
+    border: 1px solid black;
+    border-radius: 1.6rem;
+    padding: 1.6rem 1.6rem 1.6rem 5rem;
+
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+
+form input::placeholder {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-family: 'Mulish';
+
+    font-weight: 600;
+}
+
+#coments {
+    width: 59.2rem;
+    height: 12.6rem;
+    border: 1px solid black;
+    border-radius: 1.6rem;
+    padding: 1.2rem 1.6rem;
+
+    font-family: 'Mulish';
+}
+
+button {
+    border: 0;
+    border-radius: 1.6rem;
+    background-image:var(--bg-gradient) ;
+    width: 15.1rem;
+    padding: 1.05rem 1.6rem;
+
+    color: #F9F4FB;
+    text-align: center;
+    line-height: 2.4rem;
+    font-size: 1.4rem;
+
+    cursor: pointer;
+    margin-bottom: 9.4rem;
+}
+
+footer {
+    padding: 1.6rem;
+    font-size: 1.6rem;
+    color: white;
+    background-image: var(--bg-gradient);
+    text-align: center;   
+}
+
+
+@media (max-width: 600px) {
+    body {
+        text-align: center
+    }
+    
+    main {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    header {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .image-wrapper img{
+        width: 30.5rem;
+    }
+
+    .header-wrapper {
+        text-align: center;
+        padding-top: 1.7rem;
+        padding-left: 0;
+    }
+
+    .header-wrapper h1 {
+        font-size: 3.2rem;
+    }
+
+    .header-wrapper p {
+        font-size: 2rem;
+        margin-bottom: 3.5rem;
+    }
+
+    section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 9.3rem 0 7.8rem;
+        gap: 5rem;
+    }
+
+    .planets {
+        width: 35.2rem;
+    }
+
+    .planets h2 {
+        padding: 3.3rem 0 1.9rem;
+        font-size: 2.9rem;
+        font-weight: 800;
+    }
+
+    .planets p {
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+    .form {
+        padding: 0 4.3rem;
+    }
+
+    .form legend {
+        font-size: 3.3rem;
+        text-align: left;
+    }
+
+    .form input {
+        width: 34.8rem;
+    }
+
+    #coments {
+        width: 34.8rem;
+    }
+
+    button {
+        margin-bottom: 6.5rem;
+    }
+}
